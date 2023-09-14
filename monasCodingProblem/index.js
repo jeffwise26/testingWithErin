@@ -33,13 +33,12 @@ function convert(input) {
 
 }
 
-// much better, second go at things 
+// second go at things 
 // reverse polish notation inspired this solution
 // https://en.wikipedia.org/wiki/Reverse_Polish_notation
 // the key thing is "going backwards" and using a stack data structure
 // https://en.wikipedia.org/wiki/Stack_(abstract_data_type)
-// I've only tried it on the single input, so it might break on some
-// edge cases, but it looks much better than the first one
+// not perfect on all inputs, but interesting 
 const stack = []
 function backwards(input) {
   for (var i = input.length - 1; i >= 0; i--) {
