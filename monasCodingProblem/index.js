@@ -51,6 +51,10 @@ function backwards(input) {
       // console.log(`repeat ${repeat}`)
       stack.push(repeat)
     } else if (input[i] != ']' && input[i] != '[') {
+      // since we ignore [] characters for the most part
+      // this won't work with repetition such as 
+      // 12[A] or 3[BA]. Those are both likely valid given
+      // the problem statement, so it could be worth fixing
       stack.push(input[i])
     }
   }
