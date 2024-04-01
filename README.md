@@ -5,3 +5,4 @@ show a new dev how to use github
 * a list
 * with stuff
 * and examples
+* omg
